@@ -7,6 +7,6 @@ app.use(express.static(__dirname + '/dist'));
 // Start the app by listening on the default
 // Heroku port
 app.listen(process.env.PORT || 8080, () => {
-  const port = process.env.PORT || 8080;
-  console.log('listening on: ' + port);
+	const port = process.env.PORT || 8080;
+	console.log('listening on: ' + port);
 });
