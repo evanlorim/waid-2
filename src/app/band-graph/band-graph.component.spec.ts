@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DisplayComponent } from './display.component';
+import { BandGraphComponent } from './band-graph.component';
 
-describe('DisplayComponent', () => {
-	let component: DisplayComponent;
-	let fixture: ComponentFixture<DisplayComponent>;
+describe('BandGraphComponent', () => {
+	let component: BandGraphComponent;
+	let fixture: ComponentFixture<BandGraphComponent>;
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [ DisplayComponent ]
+			declarations: [ BandGraphComponent ]
 		})
 		.compileComponents();
 	}));
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(DisplayComponent);
+		fixture = TestBed.createComponent(BandGraphComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

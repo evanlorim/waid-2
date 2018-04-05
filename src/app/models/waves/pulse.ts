@@ -1,5 +1,5 @@
 import { Wave } from '../wave';
 import { Constant } from '../constant';
 
-export class SimplexWave {
+export class PulseWave {
 }

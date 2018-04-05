@@ -1,7 +1,3 @@
-<div *ngIf="constant" fxLayout="row" fxLayoutAlign="center center">
-	<div fxFlex="0 1 2em" fxLayoutAlign="center center"><span class="title">{{ constant.name }}</span></div>
-
-	<mat-slider fxFlex class="constant" [min]="constant.min" [max]="constant.max" [step]="constant.step" [(ngModel)]="constant.value" [tickInterval]="1" (change)="onSliderChange()"></mat-slider>
-
-	<div fxFlex="0 1 2em" fxLayoutAlign="center center"><span class="value">{{ constant.value.toString() | slice:0:4 }}</span></div>
-</div>
+<p>
+	constant works!
+</p>
