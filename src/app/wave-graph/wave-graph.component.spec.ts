@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PatternEditorComponent } from './pattern-editor.component';
+import { WaveGraphComponent } from './wave-graph.component';
 
-describe('PatternEditorComponent', () => {
-	let component: PatternEditorComponent;
-	let fixture: ComponentFixture<PatternEditorComponent>;
+describe('WaveGraphComponent', () => {
+	let component: WaveGraphComponent;
+	let fixture: ComponentFixture<WaveGraphComponent>;
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [ PatternEditorComponent ]
+			declarations: [ WaveGraphComponent ]
 		})
 		.compileComponents();
 	}));
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(PatternEditorComponent);
+		fixture = TestBed.createComponent(WaveGraphComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

@@ -1,16 +1,17 @@
 import { Constant } from './constant';
-import { Box } from './box';
-import { assign } from 'lodash';
+import { Rectangle } from './rectangle';
+import { uniqueId, findKey } from 'lodash';
 export class Wave {
-	public domain = new Box(0, 1, 0, 1, 200);
-	public constants: { [index: string]: Constant };
-	public name: string;
-	public description: string;
-	public z = new Constant(0, 0, 1, '\\z');
-	constructor () {
-		assign(this.constants, {delta: new Constant(.5, 0, 2, 'δ')});
-	}
-	f(x: number, t: number = 0): number {
-		return x + ( t * this.constants['delta'].val );
+	public constants: { [index: string]: Constant } = {};
+	public delta: Constant = new Constant(.5, 0, 2, 'δ', 20);
+	public isShifting = false;
+	public domain: Rectangle;
+	public id = uniqueId('wave_');
+	public name?: string;
+	public description?: string;
+	f(x: number): number { return x; }
+	updateConstant(constant: Constant): void {
+		const key = findKey(this.constants, {id: constant.id});
+		this.constants[key] = constant;
 	}
 }

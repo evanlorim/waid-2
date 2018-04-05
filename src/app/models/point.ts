@@ -1,2 +1,4 @@
-export class Point {
+export interface Point2D {
+	x: number;
+	y: number;
 }

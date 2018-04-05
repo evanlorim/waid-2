@@ -1,17 +1,9 @@
-footer {
-	color: white;
-	background-color:#303f9f;
-	min-height: 20vh;
+div.content {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-.content-1 {
-	background-color:lighten(#303f9f, 50%);
-}
-
-.content-2 {
-	background-color:lighten(#303f9f, 40%);
-}
-
-.content-3 {
-	background-color:lighten(#303f9f, 50%);
+div.footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
